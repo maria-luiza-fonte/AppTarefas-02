@@ -1,0 +1,58 @@
+﻿@{
+	ViewData["Title"] = "Página Inicial";
+}
+
+<div class="container py-5">
+
+	<div class="text-center mb-5">
+		<h1 class="display-4 fw-bold"><i class="bi bi-card-checklist"></i> AppTarefas</h1>
+		<p class="lead text-muted">Gerencie suas tarefas diárias de uma forma simples e eficiente</p>
+		<a asp-controller="Tarefas" asp-action="Index" class="btn btn-primary btn-sm mt-3">Ver minhas tarefas</a>
+	</div>
+
+
+	<div class="row text-center">
+
+		<div class="col-12 col-md-4 mb-4">
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+
+					<i class="bi bi-plus-circle display-4 text-bg-primary mb-3"></i>
+					<h5 class="card-title">Adicionar Tarefas</h5>
+					<p class="card-text text-muted">Crie novas tarefas rapidamente para não perder nenhuma atividade</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-4 mb-4">
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+
+					<i class="bi bi-check-circle display-4 text-success mb-3"></i>
+					<h5 class="card-title">Concluida</h5>
+					<p class="card-text text-muted">Marque suas tarefas como concluídas para manter o foco no que importa</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-4 mb-4">
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+
+					<i class="bi bi-trash display-4 text-bg-primary mb-3"></i>
+					<h5 class="card-title">Excluir Tarefa</h5>
+					<p class="card-text text-muted">Remova tarefas que não são mais necessarias de forma fácil</p>
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+
+</div>
