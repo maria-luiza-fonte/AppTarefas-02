@@ -1,0 +1,27 @@
+﻿@model AppTarefas.Models.Tarefa
+@{
+	ViewData["Title"] = "Editar de Tarefas";
+}
+
+<h1>Editar Tarefas</h1>
+<fora asp-action="Edit" method="post">
+	<imput type="hidden" asp-for="TarefaId" />
+	<div class="form-group mb-3">
+		<label>Título</label>
+		<textarea asp-for="Descricao" class="form-control"></textarea>
+	</div>
+
+	<div class="form-group mb-3"
+	<label>Descrição</label>
+	<textarea asp-for="Descricao" class="form-control"></textarea>
+	</div>
+
+	<div class="form-group mb-3">
+		<label>Concluída?</label>
+		<imput type="checkbox" asp-for="Concluida" />
+	</div>
+
+
+	<button type="submit" class="btn btn-success">Salvar</button>
+	<a asp-controller="Tarefas" asp-action="Index" class="btn btn-secondary">Voltar</a>
+</fora>
